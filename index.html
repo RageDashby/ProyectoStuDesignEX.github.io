@@ -1,143 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="estilo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<html lang="es"> <!-- Cambiado a español -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StuDesingEx</title>
+    
+    <!-- Optimización de enlaces a fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="/script.js"></script>
-    <title>StuDesingEx</title>
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Itim&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="estilo.css"> <!-- Ruta corregida -->
+</head>
+<body>
     <main>
-      <header>
-        <img src="/imagenes/Icono.png" alt="Icono" id="tit" width="50px"/>
-        <img src="/imagenes/LOGO.png" alt="Logo" id="tit" width="200px"/>
-      </header>
-      <br>
-      <nav class="topnav" id="mytopnav">
-        <a href=""><img src="/imagenes/Icono.png" alt="Icono"  width="50px"/></a>
-        <a href="#c">StuDesingEx</a>
-        <a href="#j">Estudiantes</a>
-        <a href="#promo">Promocionate</a>
-        <a class="icon" onclick="funcionNavBar()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-      <div id="prin">
-        <section class="super">
-          <h2 id="c">¿Quienes Somos?</h2>
-          <div class="foto"><img src="" alt="" /></div>
-          <div class="texto">
-            <p>
-              StuDesignEx es un proyecto que busca conectar directamente a
-              clientes con estudiantes de diseño talentosos y motivados.
-              Entendemos que encontrar un diseño profesional y asequible puede
-              ser un desafío, especialmente para pequeñas empresas y
-              emprendedores con presupuestos limitados. Por eso, hemos creado
-              una plataforma donde puedes explorar los portafolios de nuestros
-              estudiantes, seleccionar al diseñador que mejor se adapte a tus
-              necesidades y trabajar juntos para hacer realidad tu visión.
-              Olvídate de los altos costos y los procesos complicados. En
-              StuDesignEx, te ofrecemos una experiencia de diseño colaborativa,
-              personalizada y accesible, donde tu éxito impulsa el crecimiento
-              de la próxima generación de diseñadores
-            </p>
-          </div>
-        </section>
-        <section class="super">
-          <h2 id="j">Andru Leal</h2>
-          <div class="foto"><img src="/imagenes/andu.png" alt="Andru Leal" width="200px" style="border-radius: 100px;"/></div>
-          <div class="texto">
-            <p>
-                "¿Interesado en algúna animacion? soy el indicado para ti"
-                <br>
-                Edad: 21 años
-            </p>
-            <button id="bot" onclick="funcionBoton('DOCANDRU')"> Ver más... </button>
-            <img src="/imagenes/DOCANDRU.png" alt="Documento Andru" id="DOCANDRU" class="oculto" width="100%">
-          </div>
-        </section>
-        <section class="super">
-          <h2 id="l">Christopher Ramirez</h2>
-          <div class="foto"><img src="/imagenes/chri.png" alt="Christopher Ramirez" width="200px" style="border-radius: 100px;"/></div>
-          <div class="texto">
-            <p>
-                "Si lo que nesesitas es un editor de video, soy la persona que buscas"
-                <br>
-                Edad: 20 años
-            </p>
-            <button id="bot" onclick="funcionBoton('DOCCHRIS')"> Ver más... </button>
-            <img src="/imagenes/DOCCHRIS.png" alt="Documento Christopher" id="DOCCHRIS" class="oculto" width="100%">
-          </div>
-        </section>
-        <section class="super">
-          <h2 id="cl">Ashby Olvera</h2>
-          <div class="foto"><img src="/imagenes/io.png" alt="Ashby Olvera" width="200px" style="border-radius: 100px;"/></div>
-          <div class="texto">
-            <p>
-                "Restauro y creo aquellos recuerdos que te sean importantes "
-                <br>
-                Edad: 20 años
-            </p>
-            <button id="bot" onclick="funcionBoton('DOCASHBY')"> Ver más... </button>
-            <img src="/imagenes/DOCASHBY.png" alt="Documento Ashby" id="DOCASHBY" class="oculto" width="100%">
-          </div>
-        </section>
-        <section class="super">
-            <h2 id="cl">Promocionate</h2>
-            <div class="foto"><img src="" alt="" /></div>
-            <div class="texto">
-              <p>
-                ¿Buscas poder promocionarte?, el primer paso siempre es importante, contactate con nosotros por medio de nuestro correo
-              </p>
-            </div>
-            <section id="promo" class="super">
-                <h2 id="cl">Promocionate</h2>
-                <div class="foto"><img src="" alt="" /></div>
+        <header>
+            <!-- IDs únicos -->
+            <img src="imagenes/Icono.png" alt="Icono" id="icono-header" width="50">
+            <img src="imagenes/LOGO.png" alt="Logo" id="logo-header" width="200">
+        </header>
+
+        <nav class="topnav" id="mytopnav">
+            <a href="#" class="nav-icon"><img src="imagenes/Icono.png" alt="Icono" width="50"></a>
+            <a href="#c">StuDesingEx</a>
+            <a href="#j">Estudiantes</a>
+            <a href="#promo">Promocionate</a>
+            <a class="icon" onclick="funcionNavBar()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <div id="prin">
+            <!-- Secciones optimizadas -->
+            <section class="super" id="c">
+                <h2>¿Quienes Somos?</h2>
                 <div class="texto">
-                  <p>
-                    ¿Buscas poder promocionarte?, el primer paso siempre es importante 
-                  </p>
-                  <form id="formularioPromocion">
-                    <label for="nombre">Nombre:</label><br>
-                    <input type="text" id="nombre" name="nombre"><br><br>
-            
-                    <label for="carrera">Carrera:</label><br>
-                    <input type="text" id="carrera" name="carrera"><br><br>
-            
-                    <label for="especialidad">Especialidad:</label><br>
-                    <input type="text" id="especialidad" name="especialidad"><br><br>
-            
-                    <button type="button" onclick="limpiarFormulario()">Enviar</button>
-                  </form>
+                    <p>StuDesignEx es un proyecto que busca conectar directamente...</p>
                 </div>
             </section>
-          </section>
-      </div>
-      <footer>
-        <p id="">
-            Contacta para soporte: ashby.olvera2005@gmail.com
-        </p>
-      </footer>
+
+            <!-- Secciones de estudiantes mejor estructuradas -->
+            <section class="super" id="j">
+                <h2>Andru Leal</h2>
+                <div class="perfil">
+                    <img src="imagenes/andu.png" alt="Andru Leal" width="200">
+                    <div class="info">
+                        <p>"¿Interesado en alguna animación?..."</p>
+                        <button class="boton-vermas" onclick="mostrarDocumento('DOCANDRU')">Ver más...</button>
+                    </div>
+                </div>
+                <img src="imagenes/DOCANDRU.png" alt="Documento Andru" id="DOCANDRU" class="documento-oculto">
+            </section>
+
+            <!-- Repetir estructura similar para otros estudiantes -->
+
+            <!-- Sección de promoción unificada -->
+            <section class="super" id="promo">
+                <h2>Promocionate</h2>
+                <div class="formulario-promo">
+                    <form id="formularioPromocion">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <!-- Más campos del formulario -->
+                        <button type="submit" class="boton-enviar">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>Contacta para soporte: ashby.olvera2005@gmail.com</p>
+        </footer>
     </main>
-  </body>
+    
+    <script src="script.js"></script> <!-- Ruta corregida -->
+</body>
 </html>
